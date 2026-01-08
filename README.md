@@ -39,8 +39,8 @@ This project focuses on clarity and correctness rather than model complexity.
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git
-cd YOUR-REPO-NAME
+git clone https://github.com/Mariam-Said1/oci-walmart-demand-forecasting.git
+cd oci-walmart-demand-forecasting
 ```
 
 2. Install dependencies:
