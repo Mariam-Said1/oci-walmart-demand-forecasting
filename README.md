@@ -35,5 +35,27 @@ This project focuses on clarity and correctness rather than model complexity.
 
 ## How to Run
 
-1. Clone the repository
+### Option 1: Run Locally
+
+1. Clone the repository:
+```bash
+git clone https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git
+cd YOUR-REPO-NAME
+```
+
 2. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+3. Launch the notebook:
+```bash
+jupyter notebook Walmart_demand_forecasting_baseline.ipynb
+```
+
+---
+
+### Option 2: View Without Running
+
+Open `Walmart_demand_forecasting_baseline.ipynb` directly on GitHub to review the analysis, outputs, and results.
+
