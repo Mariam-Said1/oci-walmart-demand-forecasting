@@ -1,61 +1,66 @@
-# Walmart Demand Forecasting
+# Walmart Demand Forecasting using OCI
 
-This project demonstrates a baseline demand forecasting workflow using historical Walmart store sales data. The goal is to analyze sales trends and build a simple, interpretable forecasting model suitable for retail demand planning.
+## Project Overview
+This project demonstrates an end-to-end demand forecasting workflow using historical Walmart store sales data. The objective is to build, evaluate, and improve machine learning models that can support inventory planning and retail supply chain decision-making.
 
-## Project Structure
+This project aligns with my OCI certifications:
+- Oracle Cloud Infrastructure (OCI) AI Foundations
+- OCI Generative AI Professional
+- OCI Multicloud Architect Professional
 
-- `Walmart_demand_forecasting_baseline.ipynb`  
-  Jupyter Notebook containing data exploration, preprocessing, and baseline forecasting model.
+## Business Problem
+Retail organizations must accurately forecast product demand in order to:
+- Reduce stockouts
+- Minimize overstock and excess inventory
+- Improve supply chain efficiency
+- Increase revenue and customer satisfaction
 
-- `Walmart_store_sales.csv`  
-  Historical Walmart store sales dataset used for analysis and modeling.
+This project explores how machine learning models can predict weekly sales at the store level using historical and contextual features.
 
-- `requirements.txt`  
-  Python dependencies required to run the notebook.
+## Dataset
+**Source:** Public Walmart Store Sales dataset
 
-- `.gitignore`  
-  Files and folders excluded from version control.
-
-## Tools & Technologies
-
-- Python  
-- pandas  
-- numpy  
-- scikit-learn  
-- matplotlib  
+**Key features include:**
+- Store identifier
+- Weekly sales
+- Holiday indicator
+- Economic and environmental variables (CPI, unemployment, fuel price, temperature)
+- Date (time-series context)
 
 ## Methodology
+1. Data loading and exploratory analysis  
+2. Time-aware data preparation to prevent leakage  
+3. Baseline model development (Linear Regression)  
+4. Advanced modeling using Random Forest  
+5. Feature engineering to improve predictive performance  
+6. Model evaluation using MAE and RMSE  
 
-1. Load and inspect historical sales data  
-2. Perform basic data cleaning and exploratory analysis  
-3. Create a baseline forecasting model  
-4. Visualize historical vs. predicted demand  
+## Results
+| Model | MAE | RMSE |
+|------|-----|------|
+| Linear Regression | ~75,856 | ~107,829 |
+| Random Forest | ~92,574 | ~133,009 |
+| Random Forest + Feature Engineering | ~78,934 | ~112,503 |
 
-This project focuses on clarity and correctness rather than model complexity.
+**Key takeaway:**  
+Feature engineering significantly improved model performance and reduced forecast error, demonstrating how domain-aware data preparation can meaningfully impact retail demand prediction.
 
-## How to Run
+## Tools & Technologies I Used
+- Python  
+- pandas, numpy  
+- scikit-learn  
+- matplotlib  
+- Oracle Cloud Infrastructure (OCI)
 
-### Option 1: Run Locally
+## Project Structure
+- `Walmart_demand_forecasting_baseline.ipynb` – End-to-end notebook with analysis and modeling  
+- `Walmart_store_sales.csv` – Dataset  
+- `requirements.txt` – Python dependencies  
+- `.gitignore` – Version control exclusions  
 
-1. Clone the repository:
+## How to Run (Optional)
 ```bash
 git clone https://github.com/Mariam-Said1/oci-walmart-demand-forecasting.git
 cd oci-walmart-demand-forecasting
-```
-
-2. Install dependencies:
-```bash
 pip install -r requirements.txt
-```
-
-3. Launch the notebook:
-```bash
 jupyter notebook Walmart_demand_forecasting_baseline.ipynb
-```
-
----
-
-### Option 2: View Without Running
-
-Open `Walmart_demand_forecasting_baseline.ipynb` directly on GitHub to review the analysis, outputs, and results.
-
