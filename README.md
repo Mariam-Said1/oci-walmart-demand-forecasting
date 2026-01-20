@@ -53,7 +53,8 @@ Feature engineering significantly improved model performance and reduced forecas
 - Oracle Cloud Infrastructure (OCI)
 
 ## Project Structure
-- `Walmart_demand_forecasting_baseline.ipynb` – End-to-end notebook with analysis and modeling  
+- `Walmart_demand_forecasting_baseline.ipynb` – End-to-end ML workflow
+- `AI_Driven_Supply_Chain_Demand_Forecasting_OCI.ipynb` - OCI architecture and setup  
 - `Walmart_store_sales.csv` – Dataset  
 - `requirements.txt` – Python dependencies  
 - `.gitignore` – Version control exclusions  
